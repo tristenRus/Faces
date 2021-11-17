@@ -103,7 +103,7 @@ def draw_all(surface, shapes, background):
     pygame.display.update()
 
 
-def get_background_theme():
+def get_background_theme(width,height):
     background, theme = color_themes.choose_theme()
     if background == 'Spongebob':
         background = color_themes.spongebob_background
@@ -111,6 +111,7 @@ def get_background_theme():
         background = color_themes.pokemon_background
     elif background == 'Pacman':
         background = color_themes.pacman_background
+    background = pygame.transform.scale(background, (width, height))
     return background, theme
 
 
@@ -123,7 +124,7 @@ def main():
     pygame.init()
     width, height = pyautogui.size()
     surface = pygame.display.set_mode((width, height))
-    background, theme = get_background_theme()
+    background, theme = get_background_theme(width, height)
     shapes = []
     running = True
     while running:
