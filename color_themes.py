@@ -9,11 +9,11 @@ Themes_Dict = {'Spongebob': [(255, 245, 108), (163, 211, 195), (38, 185, 200), (
                           pygame.Color('#FFB852'), pygame.Color('#FFFF00'), pygame.Color('#FD0000'),
                           pygame.Color('#00FF00'), pygame.Color('#2121DE')]}
 
-spongebob_background = pygame.image.load(r'C:\Users\Tristen\Desktop\PycharmProjects\Faces\backgrounds\wp2891267'
+spongebob_background = pygame.image.load(r'backgrounds\wp2891267'
                                          r'-spongebob-flower-sky-background.jpg')
-pokemon_background = pygame.image.load(r'C:\Users\Tristen\Desktop\PycharmProjects\Faces\backgrounds\nature'
+pokemon_background = pygame.image.load(r'backgrounds\nature'
                                        r'-1637029136680-6488.jpg')
-pacman_background = pygame.image.load(r'C:\Users\Tristen\Desktop\PycharmProjects\Faces\backgrounds\Pac-Man Maze '
+pacman_background = pygame.image.load(r'backgrounds\Pac-Man Maze '
                                       r'Wallpaper by spdy4 on DeviantArt.jpg')
 
 
